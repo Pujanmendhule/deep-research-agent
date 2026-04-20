@@ -53,7 +53,7 @@ agent = Agent(
     tools=[fake_web_search],
 )
 
-result = Runner.run_sync(agent, "What is RAG in AI?")
+result = Runner.run_sync(agent, "What is RAG in AI, tell in brief about vector embedding?")
 print("\n=== FINAL ANSWER ===")
 print(result.final_output)
 

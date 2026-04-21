@@ -80,7 +80,7 @@ async def fetch_page(url: str) -> str:
 
     results = response.get("results", [])
     if not results:
-        return "Could not extract content from that URL."
+        return "Could not extract content from that URL , i am writing this just for commit."
 
     content = results[0].get("raw_content", "")
     return content[:4000] if content else "Page was empty."
@@ -103,7 +103,7 @@ research_agent = Agent(
 
 
 async def main():
-    question = "What are the most important AI developments in the last month?"
+    question = "What are the most important AI developments in the last 6 month?"
     print(f"QUESTION: {question}\n{'─' * 60}")
 
     result = await Runner.run(research_agent, input=question)

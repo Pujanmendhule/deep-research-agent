@@ -84,7 +84,7 @@ search_agent = Agent(
     instructions=(
         "You are a web research specialist. "
         "When given a topic, call web_search 2-3 times with different angle queries "
-        "to gather diverse sources, to gather diverse source. "
+        "to gather diverse sources, "
         "Compile ALL raw findings as a bulleted list, each with the URL. "
         "Once your findings are complete, hand off to AnalystAgent to write the report. "
         "Do NOT write the final report yourself."

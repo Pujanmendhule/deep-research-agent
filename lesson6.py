@@ -48,7 +48,7 @@ async def web_search(query: str, max_results: int = 5) -> str:
 
     Args:
         query: The search query. Keep it short and specific.
-        max_results: How many results to return. Default 5, max 10.
+        max_results: How many results to return. Default 5, max 12.
     """
     print(f"[TOOL] web_search(query={query!r})")
     try:

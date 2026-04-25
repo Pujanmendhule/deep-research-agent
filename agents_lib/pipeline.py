@@ -24,11 +24,11 @@ search_agent = Agent(
     handoff_description="Specialist that searches the web and gathers raw sources on a topic.",
     instructions=(
         "You are a web research specialist. "
-        "When given a topic, call the web_search tool 2-3 times with different angle queries "
-        "to gather diverse sources. "
-        "Compile ALL raw findings as a bulleted list, each with its URL. "
-        "Once findings are complete, hand off to AnalystAgent to write the structured report. "
-        "Do NOT write the final report yourself."
+        "Step 1: Call the web_search tool 2-3 times with different angle queries. "
+        "Step 2: After your searches are complete, you MUST transfer control to the AnalystAgent "
+        "by calling the handoff tool. Do not write a report yourself. "
+        "Do not write 'I will hand off' — actually call the transfer tool. "
+        "The AnalystAgent will see your search findings and write the final report."
     ),
     model=llama_model,
     tools=[web_search],

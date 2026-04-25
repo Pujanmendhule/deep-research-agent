@@ -1,4 +1,38 @@
+(.venv) C:\Users\PUJAN\Documents\deep-research-agent>python research.py "how do quantum computers solve cryptography problems"
+13:54:51  starting research: 'how do quantum computers solve cryptography problems'
+13:54:52  HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:54:58  HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:54:59  HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:55:01  HTTP Request: POST https://api.tavily.com/search "HTTP/1.1 200 OK"
+13:55:02  HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:55:03  HTTP Request: POST https://api.tavily.com/search "HTTP/1.1 200 OK"
+13:55:04  HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:55:05  HTTP Request: POST https://api.tavily.com/search "HTTP/1.1 200 OK"
+13:55:14  HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:55:14  structured output not produced; saving raw text instead
+13:55:14  report saved: reports\20260425-135514-how-do-quantum-computers-solve-cryptography-problems.md
+
+(.venv) C:\Users\PUJAN\Documents\deep-research-agent>
+
+
 
 # Research report: how do quantum computers solve cryptography problems
 
-{"name": "web_search", "parameters": {"query": "quantum computers cryptography problems", "max_results": 5}}
+Here is the compiled list of findings as a bulleted list, each with its URL:
+
+* Quantum computing will make cryptography obsolete. But computer scientists are working to make them unhackable. | Live Science https://www.livescience.com/technology/computing/quantum-computing-will-make-cryptography-obsolete-but-computer-scientists-are-working-to-make-them-unhackable
+* How Quantum Computing Threats Impact Cryptography and Cybersecurity https://www.ssh.com/academy/how-quantum-computing-threats-impact-cryptography-and-cybersecurity
+* How Quantum Computing Threatens Cryptography https://www.philadelphiafed.org/the-economy/banking-and-financial-markets/how-quantum-computing-threatens-cryptography
+* Quantum Computing and Cryptography: Analysis, Risks, and ... https://cgsr.llnl.gov/sites/cgsr/files/2024-08/QuantumComputingandCryptography-20190920.pdf
+* addressing the quantum computing threat to cryptography https://www.cyber.gc.ca/sites/default/files/cyber/publications/ITSE.00.017.pdf
+* How Quantum Computing Affects Cryptography https://thequantuminsider.com/2026/04/06/how-quantum-computing-affects-cryptography/
+* Classical vs. Quantum vs. Post-Quantum Cryptography - Quantropi https://www.quantropi.com/differences-between-classical-quantum-post-quantum-cryptography/
+* Quantum Cryptography vs. Post-Quantum Cryptography - Synopsys https://www.synopsys.com/blogs/chip-design/quantum-cryptography-vs-post-quantum-cryptography.html
+* Quantum computers are really a threat to Cryptography? - Reddit https://www.reddit.com/r/QuantumComputing/comments/174lcgg/quantum_computers_are_really_a_threat_to/
+* What Is Quantum Cryptography? | IBM https://www.ibm.com/think/topics/quantum-cryptography
+* Post-Quantum Cryptography (PQC) | Crypto-Agility https://www.qusecure.com/
+* Post-quantum Cryptography (PQC): New Algorithms for a New Era https://www.rambus.com/blogs/post-quantum-cryptography-pqc-new-algorithms-for-a-new-era/
+* Services and Solutions with Post Quantum Cryptography Built In https://www.reddit.com/r/QuantumComputing/comments/1eqokn0/services_and_solutions_with_post_quantum/
+* Cryptography: how to protect critical systems in the quantum era https://www.polytechnique-insights.com/en/columns/geopolitics/cryptography-how-to-protect-yourself-in-the-post-quantum-era/
+
+Now, I will hand off to AnalystAgent to write the structured report.

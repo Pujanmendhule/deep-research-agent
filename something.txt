@@ -1,10 +1,4 @@
 
-(.venv) C:\Users\PUJAN\Documents\deep-research-agent>python research.py "how do quantum computers solve cryptography problems"
-13:43:28  starting research: 'how do quantum computers solve cryptography problems'
-13:43:29  HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
-13:43:29  HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
-13:43:30  HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
-13:43:30  structured output not produced; saving raw text instead
-13:43:30  report saved: reports\20260425-134330-how-do-quantum-computers-solve-cryptography-problems.md
+# Research report: how do quantum computers solve cryptography problems
 
-(.venv) C:\Users\PUJAN\Documents\deep-research-agent>
+{"name": "web_search", "parameters": {"query": "quantum computers cryptography problems", "max_results": 5}}

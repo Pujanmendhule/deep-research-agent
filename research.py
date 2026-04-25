@@ -76,13 +76,17 @@ async def research(topic: str) -> int:
         log.error(f"pipeline failed: {e}")
         return 2
 
-    report: ResearchReport = result.final_output
-    log.info(f"research complete (confidence {report.confidence:.2f})")
+    output = result.final_output
 
-    markdown = format_report_as_markdown(topic, report)
+    if isinstance(output, ResearchReport):
+        log.info(f"research complete (confidence {output.confidence:.2f})")
+        markdown = format_report_as_markdown(topic, output)
+    else:
+        log.warning("structured output not produced; saving raw text instead")
+        markdown = f"# Research report: {topic}\n\n{str(output)}"
+
     path = save_report(topic, markdown)
     log.info(f"report saved: {path}")
-
     return 0
 
 

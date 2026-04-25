@@ -8,16 +8,13 @@ nvidia_client = AsyncOpenAI(
     api_key=os.environ["NVIDIA_API_KEY"],
 )
 
-qwen_model = OpenAIChatCompletionsModel(
-    model="qwen/qwen3-coder-480b-a35b-instruct",
+# Llama-3.3-70B handles tool calls and JSON schema reliably on NVIDIA NIM
+llama_model = OpenAIChatCompletionsModel(
+    model="meta/llama-3.3-70b-instruct",
     openai_client=nvidia_client,
 )
 
-maverick_model = OpenAIChatCompletionsModel(
-    model="meta/llama-4-maverick-17b-128e-instruct",
-    openai_client=nvidia_client,
-)
-
+# Same model for the guardrail (a separate variable for clarity)
 guard_model = OpenAIChatCompletionsModel(
     model="meta/llama-3.3-70b-instruct",
     openai_client=nvidia_client,
